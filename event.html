@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ArcticForestMC</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link href="main.css" rel="stylesheet">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta name="description" content="The best Minecraft Server">
+  <meta name="keywords" content="ArcticForestMC, AFMC, ArcticMC, ArcticForest, Minecraft, MinecraftSurvival, Minecraft Survival, MinecraftJava, Minecraft Java, MinecraftServer, Minecraft Server, MinecraftNetwork, Minecraft Network, MinecraftGame">
+  <meta name="author" content="Ace_Monkey_Ilium">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="header">
+    <img class="img" src="android-chrome-512x512.png">
+    <div id="navbar">
+      <a class="notactive" href="/index.html">Home</a>
+      <a class="notactive" href="http://store.arcticforestmc.net" target="_blank">Store</a>
+      <a class="notactive" href="https://discord.com/invite/cb7e6kRe?utm_source=Discord%20Widget&utm_medium=Connect" target="_blank">Discord</a>
+      <a class="notactive" href="javascript:void(0)">Voting</a>
+      <a class="active" href="javascript:void(0)">Event</a>
+    </div>
+    <div class="container">
+      <img class="img" src="https://imgur.com/CYL2LvE.png">
+      <div class="centered"><h1 id=demo></h1></div>
+    </div>
+  <div class="bottomContainer"></div>
+  </div>  
+  <div class="content">
+     
+    
+    <section>
+      <div class="discord">
+        <h1>Spleef Trailer</h1>
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/WJV3G2CXj4o?autoplay=1&mute=1" frameborder="0"></iframe></center>
+      </div>
+    </section>    
+  </div>
+  <div class="footer">
+    <table>
+      <tr>
+        <th><h3>Socials</h3></th>
+        <th><h3>Apply</h3></th>
+        <th><h3>Support</h3></th>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://www.youtube.com/channel/UCgjUaUAwdKRosLiLTspX3oA">YouTube</a></td>
+        <td><a target="_blank" href="https://goo.gl/forms/oSxCljmMaChoK6JX2">Helper</a></td>
+        <td><a target="_blank" href="https://discord.com/invite/cb7e6kRe?utm_source=Discord%20Widget&utm_medium=Connect">Discord</a></td>  
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://www.instagram.com/arcticforestmc_net/">Instagram</a></td>
+        <td><a target="_blank" href="https://goo.gl/forms/FLs5mY3d1TZIu0Vs2">Builder</a></td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://www.reddit.com/r/ArcticForestMC/">Reddit</a></td>
+        <td><a target="_blank" href="https://goo.gl/forms/G6nMdVtRw4w2VL9x2">Developer</a></td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://discord.com/invite/cb7e6kRe?utm_source=Discord%20Widget&utm_medium=Connect">Discord</a></td>
+      </tr>
+    </table>
+      <br><br><a class="copyright"><small>&copy; 2014 - 2021 ArcticForestMC. All rights reserved.
+We are not affiliated with Minecraft and it's copyright to Mojang Studios and is not with this site.</small></a>
+  </div>
+  <script>
+    
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 1, 2021 1:33:30 GMT").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = "Spleef Event <br> Starting in " + days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Spleef Event <br> Currently in Progress...";
+      }
+      
+    }, 1000);
+  </script> 
+</body> 
+</html>
